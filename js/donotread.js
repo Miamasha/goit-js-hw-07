@@ -21,7 +21,8 @@
 //     console.log(`imageEl`) //ссылка на всю картинку со всеми атрибутами
 //     console.log(`imageEl.src`) // метод 1 добыть атрибут, ссылка на изначального кота (#62,11; 21:31); только для тех атрибутов, которые пошли как свойство объекта
 //     imageEl.src = `new src-link to new photo`;
-//     imageEl.alt = `Это уже новая картинка`;
+//     imageEl.alt = `Это уже новая картинка`; // метод 1 изменить атрибут
+        // image.setAttribute("alt", "Amazing nature"); // метод 2 изменить атрибут
 //     console.log(imageEl.getAttribute(`src`));  //метод 2 добыть атрибут, ссылка на нового котенка (#62,11; 28:28); для всех атрибутов
 //     imageEl.removeAttribute(`alt`); // будет без подписи
 //     imageEl.hasAttribute(`alt`); // false
@@ -78,8 +79,10 @@
 //   <button class="btn" type="submit">Register</button>
 //   </form>
 // // JS var.1
+
 // const registerForm = document.querySelector(".form");
 // registerForm.addEventListener("submit", handleSubmit);
+
 // function handleSubmit(event) {
 //   event.preventDefault();
 //   const form = event.target;
@@ -91,6 +94,7 @@
 //   console.log(`Login: ${login.value}, Password: ${password.value}`);
 //   form.reset();
 // }
+
 // // JS var.2; "submit" = event; ".form".addEventListener = event.target;
 // document.querySelector(".form").addEventListener("submit", handleSubmit);
 // function handleSubmit(event) {
