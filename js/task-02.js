@@ -37,14 +37,28 @@ const images = [
 // флексбоксами через CSS класи.
 
 const gallery = document.querySelector(".gallery");
-const markup = images.map((image) => 
-`<li>
-  <img  src="${image.url}"
-        alt="${image.alt}"
-        width="200"/><br>
-</li>`);
-// console.log(markup);
-gallery.innerHTML = markup.join(``);
+// const markup = images.map((image) => 
+// `<li>
+//   <img  src="${image.url}"
+//         alt="${image.alt}"
+//         width="200"/><br>
+// </li>`);
+// gallery.innerHTML = markup.join(``);
+
+images.forEach(image => {
+  const li = document.createElement("li");
+  li.innerHTML = `<img  src="${image.url}" alt="${image.alt}" width=200>`;
+  gallery.append(li);
+})
+
+
+// const buttons = 
+// `<div class="buttons">
+//   <button type="button">Back</button>
+//   <button type="button">Forward</button>
+// </div>`;
+// gallery.insertAdjacentHTML("afterend", buttons);
+
 
 // document.getElementById("br-html").innerHTML = arr.join('<br>');
 // const technologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
