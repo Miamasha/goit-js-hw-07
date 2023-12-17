@@ -27,3 +27,30 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
+// Напиши скрипт для створення галереї зображень на основі масиву
+// об'єктів images для створення елементів <img>, вкладених в <li>. Ти можеш створити й додати
+// HTML-елементи, використовуючи document.createElement() і
+// elem.append() або шаблонні рядки і elem.insertAdjacentHTML().
+// Усі елементи галереї повинні додаватися в DOM за одну
+// операцію додавання. Додай мінімальне оформлення галереї
+// флексбоксами через CSS класи.
+
+const gallery = document.querySelector(".gallery");
+const markup = images.map((image) => 
+`<li>
+  <img  src="${image.url}"
+        alt="${image.alt}"
+        width="200"/><br>
+</li>`);
+// console.log(markup);
+gallery.innerHTML = markup.join(``);
+
+// document.getElementById("br-html").innerHTML = arr.join('<br>');
+// const technologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
+// const list = document.querySelector(".gallery");
+// const markup = technologies
+//   .map((technology) => `<li class="list-item">${technology}</li>`)
+//   .join("");
+// console.log(markup);
+// list.innerHTML = markup;

@@ -14,12 +14,24 @@
 document.querySelector(".login-form").addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
     event.preventDefault();
-    const email = event.target.elements.email.value;
-    const password = event.target.elements.password.value;  
+    const email = event.target.elements.email.value.trim();
+    const password = event.target.elements.password.value.trim();  
         if (email === "" || password === "") {
             return alert("All form fields must be filled in");
-        }
-    const data = {Email: email, Password: password};
-    console.log(data);
+        }    
+    console.log({Email: email, Password: password});
     event.target.reset();
 }
+// const registerForm = document.querySelector(".form");
+// registerForm.addEventListener("submit", handleSubmit);
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   const form = event.target;
+//   const login = form.elements.login.value;
+//   const password = form.elements.password.value;  
+//     if (login === "" || password === "") {
+//         return console.log("Please fill in all the fields!");
+//     }
+//   console.log(`Login: ${login.value}, Password: ${password.value}`);
+//   form.reset();
+// }
