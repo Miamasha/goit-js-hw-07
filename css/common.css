@@ -13,14 +13,27 @@ body {
   line-height: 1.5;
 }
 
+/* //////////////task 2////////////// */
 .gallery {
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
-
-.buttons {  
+/* .buttons {  
   display: flex;
   justify-content: center;
   gap: 10%;
+} */
+
+
+/* //////////////task 6////////////// */
+#controls{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+#boxes{
+  display: flex;
+  flex-direction:column;
+  align-items: center;  
 }

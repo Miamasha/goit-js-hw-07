@@ -9,8 +9,8 @@
 const items = document.querySelectorAll(".item")
 
 // 1.
-console.log(`кількість категорій = ${items.length}`)
-// console.log(`кількість категорій = ${document.querySelectorAll(".item").length}`)
+console.log(`Кількість категорій = ${items.length}`)
+// console.log(`Кількість категорій = ${document.querySelectorAll(".item").length}`)
 
 // 2.
 items.forEach(item => {  
