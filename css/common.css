@@ -19,8 +19,7 @@ body {
   justify-content: space-between;
 }
 
-.buttons {
-  
+.buttons {  
   display: flex;
   justify-content: center;
   gap: 10%;
