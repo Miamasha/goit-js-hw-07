@@ -49,10 +49,14 @@ const createBtn = document.querySelector(`[data-create]`)
       boxesContainer.append(box);      
     }
   }
+  // else if (input.value = "") {
+  //   console.log("Input value  = Null")
+  // }
   else{
     console.log('Amount tooooo large!!')
-  }
+  }  
   input.value = "";
+  
 });
 
 // function createBoxes(amount) {
